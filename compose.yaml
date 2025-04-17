@@ -1,6 +1,6 @@
 services:
   frontend:
-    image: cmvghazi/movies-frontend:${FRONTEND_VERSION:-latest}
+    image: lefredy/tp2-2389013-2284895-frontend:${FRONTEND_VERSION:-latest}
     build:
       context: ./movies-frontend
     ports:
@@ -11,7 +11,7 @@ services:
       - movies-network
 
   backend:
-    image: cmvghazi/movies-backend:${BACKEND_VERSION:-latest}
+    image: lefredy/tp2-2389013-2284895-backend:${BACKEND_VERSION:-latest}
     container_name: movies-backend
     build:
       context: ./movies-backend
